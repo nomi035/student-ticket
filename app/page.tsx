@@ -42,7 +42,8 @@ export default function Home() {
       }
 
       // 🔹 Generate QR code (locally)
-      const qr = await QRCode.toDataURL(`rollNo: ${data.rollNo}`);
+      const qr = await QRCode.toDataURL('-');
+       
 
       setTicket(data);
       setQrCode(qr);
